@@ -5,7 +5,7 @@
 #### Usage
 
 name | meaning | format | example |
----- | ---- | ---- |
+---- | ---- | ---- | ---- |
 title | title | text | title="2013 Congressional Districts Shapefile" |
 tags | tags | array | tags="2013, congress, redistricting" |
 pub | publication date | month/year or 00/year |  
@@ -18,8 +18,7 @@ link | source link | url/filepath to content origin/attribution | link="http://d
 source | source name | text | source="Cicero API by Azavea" |
 pdf | pdf file associated with dataset | url/filepath | pdf="http://census.gov/documentation.pdf" |
 parents | is the dataset associated with/a derivative of any other sets? | url/filepath | parents="../data/0001-01-01-parent-data.md" |
-category | stage in data processing [raw, extraction, clean] | category="raw" |
-
+category | stage in data processing | [raw, extraction, clean] | category="raw" |
 
 #### Example
 
