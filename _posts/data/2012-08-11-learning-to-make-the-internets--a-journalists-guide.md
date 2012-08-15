@@ -20,7 +20,7 @@ csv: ""
 parents: ""
 source: "#"
 ---
-[Title][source]
+[Learning to make the internets — a journalist’s guide]
 
-[source]: http://www.andymboyle.com/2011/07/11/learning-to-make-the-internets-a-journalists-guide/
+[Learning to make the internets — a journalist’s guide]: http://www.andymboyle.com/2011/07/11/learning-to-make-the-internets-a-journalists-guide/
 <p class='data desc'></p>

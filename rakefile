@@ -10,10 +10,12 @@ CONFIG = {
   'posts' => File.join(SOURCE, "_posts"),
   'dataset' => File.join(SOURCE, "_posts/data"),
   'metadata' => File.join(SOURCE, "_posts/metadata"),
+  'dpkg' => File.join(SOURCE, "_posts/dpkg"),
   'map' => File.join(SOURCE, "_posts/maps"),
   'post_ext' => "md",
   "data_ext" => "md",
   "metadata_ext" => "md",
+  "dpkg_ext" => "json",
   "map_ext" => "html",
 }
 
@@ -26,6 +28,7 @@ module CH
       :posts => "_posts",
       :dataset => "_posts/data",
       :metadata => "_posts/metadata",
+      :dpkg => "_posts/dpkg",
       :map => "_posts/maps",
     }
     
@@ -97,9 +100,9 @@ task :dataset do
     dataset.puts "parents: \"#{parents}\""
     dataset.puts "source: \"#{source}\""
     dataset.puts "---"
-    dataset.puts "[Title][source]"
+    dataset.puts "[#{title}]"
     dataset.puts ""
-    dataset.puts "[source]: #{link}"
+    dataset.puts "[#{title}]: #{link}"
     dataset.puts "<p class='data desc'>#{desc}</p>"
     
     

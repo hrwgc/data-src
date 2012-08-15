@@ -13,7 +13,7 @@ csv: ""
 parents: ""
 source: "#"
 ---
-[Title][source]
+[NGA Anti Shipping Activity Messages]
 
-[source]: http://msi.nga.mil/NGAPortal/MSI.portal?_nfpb=true&_pageLabel=msi_portal_page_65
+[NGA Anti Shipping Activity Messages]: http://msi.nga.mil/NGAPortal/MSI.portal?_nfpb=true&_pageLabel=msi_portal_page_65
 <p class='data desc'>Anti-Shipping Activity Messages (ASAM) include the locations and descriptive accounts of specific hostile acts against ships and mariners. The reports may be useful for recognition, prevention and avoidance of potential hostile activity. </p>

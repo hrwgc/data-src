@@ -15,7 +15,7 @@ csv: ""
 parents: ""
 source: "#"
 ---
-[Title][source]
+[National Historical Geographic Information System]
 
-[source]: https://www.nhgis.org/
+[National Historical Geographic Information System]: https://www.nhgis.org/
 <p class='data desc'>The National Historical Geographic Information System (NHGIS) provides, free of charge, aggregate census data and GIS-compatible boundary files for the United States between 1790 and 2010.</p>

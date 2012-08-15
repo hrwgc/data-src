@@ -15,7 +15,7 @@ csv: ""
 parents: ""
 source: "Freedom House"
 ---
-[Title][source]
+[Freedom of the Press 2012 Report]
 
-[source]: https://github.com/hrwgc/data/pdf/freedom-of-the-press-2012.pdf
+[Freedom of the Press 2012 Report]: https://github.com/hrwgc/data/pdf/freedom-of-the-press-2012.pdf
 <p class='data desc'></p>

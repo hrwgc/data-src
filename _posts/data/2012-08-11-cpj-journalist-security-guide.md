@@ -15,7 +15,7 @@ csv: ""
 parents: ""
 source: "#"
 ---
-[Title][source]
+[CPJ Journalist Security Guide]
 
-[source]: http://www.cpj.org/reports/2012/04/journalist-security-guide.php
+[CPJ Journalist Security Guide]: http://www.cpj.org/reports/2012/04/journalist-security-guide.php
 <p class='data desc'></p>
