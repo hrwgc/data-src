@@ -112,6 +112,95 @@ task :dataset do
 end # task :dataset
 
 
+# Usage: rake map title="A Title" [date="2012-02-09"]
+desc "Create new map in #{CONFIG['map']}"
+task :map do
+  abort("rake aborted: '#{CONFIG['map']}' directory not found.") unless FileTest.directory?(CONFIG['map'])
+  title = ENV["title"] || "new-map"
+  shp = ENV["shp"] || ""
+  sql = ENV["sql"] || ""
+  csv = ENV["csv"] || ""
+  api = ENV["api"] || ""
+  base = ENV["base"] || ""
+  scale = ENV["scale"] || ""
+  mc = ENV["mc"] || ""
+  size = ENV["size"] || ""
+  sym = ENV["sym"] || "circle"
+  gdoc = ENV["gdoc"] || ""
+  tags = ENV["tags"] || "[]"
+  cols = ENV["cols"] || "id, value"
+  ct = ENV["ct"] || ""
+  desc = ENV["desc"] || ""
+  dataset = ENV["dataset"] || ""
+  group = ENV["group"] || ""
+  source = ENV["source"] || ""
+  category = ENV["category"] || "map"
+  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  tags = tags.gsub('[','').gsub(']','').gsub(/^/,'
+   - ').gsub(/[,]{1}[ ]{0,1}/,'
+   - ')
+  ct = ct.gsub('[','').gsub(']','').gsub(/^/,'
+   - ').gsub(/[,]{1}[ ]{0,1}/,'
+   - ')
+  cols = cols.gsub('[','').gsub(']','').gsub(/^/,'
+   - ').gsub(/[,]{1}[ ]{0,1}/,'
+   - ')
+
+  begin
+    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
+  rescue Exception => e
+    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
+    exit -1
+  end
+  filename = File.join(CONFIG['map'], "#{date}-#{slug}.#{CONFIG['map_ext']}")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  g = gdoc
+  if g != ""
+      script = "{% include ch/gdocs %}"
+  else script = "{% include ch/map %}"
+  end
+  if base == ""
+    base = "herwig.map-sc0wx5or"
+    else
+          base = "#{base}"
+            end
+
+  puts "Creating new map page: #{filename}"
+  open(filename, 'w') do |map|
+    map.puts "---"
+    map.puts "layout: maps"
+    map.puts "title: \"#{title.gsub(/-/,' ')}\""
+    map.puts "description: \"#{desc}\""
+    map.puts "category: #{category}"
+    map.puts "tags: #{tags}"
+    map.puts "gdoc: \"#{gdoc}\""
+    map.puts "cols: #{cols}"
+    map.puts "col-title: #{ct}"
+    map.puts "marker-color: \"#{mc}\""
+    map.puts "marker-size: \"#{size}\""
+    map.puts "marker-symbol: \"#{sym}\""
+    map.puts "scale: \"#{scale}\""
+    map.puts "api:  \"#{api}\""
+    map.puts "base: \"#{base}\""
+    map.puts "thumb: \"http://api.tiles.mapbox.com/v3/#{api}/-73.9500,40.7142,12/270x300.png\"" 
+    map.puts "embed: \"http://api.tiles.mapbox.com/v3/#{api}.html\""
+    map.puts "group: #{group}"
+    map.puts "sql: #{sql}"
+    map.puts "shp: #{shp}"
+    map.puts "source: \"#{source}\""
+    map.puts "dataset: #{dataset}"
+    map.puts "---"
+    map.puts "{% include JB/setup %}"
+    map.puts ""
+    map.puts "<div id='map'></div>"
+    map.puts"{% include ch/mapbox %}"
+    map.puts "#{script}"
+  end
+end # task :map
+
+
 ## usage: preview jekyll posts 
 ## rake preview
 #
