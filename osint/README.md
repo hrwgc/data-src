@@ -1,0 +1,14 @@
+- [NATO OSINT Reader FINAL 11OCT02.pdf](http://www.oss.net/dynamaster/file_archive/030201/254633082e785f8fe44f546bf5c9f1ed/NATO%20OSINT%20Reader%20FINAL%2011OCT02.pdf)
+- [Open Source Intelligence (OSINT) Link Directory, by Ben Benavides](http://humanterrainsystem.army.mil/Newsletter/20101220_osint_link_directory.pdf)
+- [Open Source Intelligence (OSINT)2oolKit On The Go, by Ben Benavides](http://www.phibetaiota.net/wp-content/uploads/2009/07/OSINT-2ool-Kit-OnThe-Go-Bag-O-Tradecraft.pdf)
+- [Air War College Military Index to the Internet, Internet Index](http://www.au.af.mil/au/awc/awcgate/awc-ndex.htm)
+- [Department of Defense Websites](http://www.defense.gov/RegisteredSites/RegisteredSites.aspx)
+- [Naval Postgraduate School Subject Guides](http://www.nps.edu/Library/Research%20Tools/Subject%20Guides%20by%20Topic/index.html)
+- [US National Intelligence Overview, 2011](http://www.whs.mil/library/IC_Consumers_Guide_2011.pdf)
+- [DTIC Government Information Guide](http://www.dtic.mil/dtic/stresources/topicLinks/governmentinfo.html)
+- [Librarians Guide to the Internet](http://www.ipl.org/)
+- [Links for OSINT (Open Source Intelligence) Internet Training Presented by Randolph Hock](http://www.onstrat.com/osint/)
+
+### Search
+
+[DTIC Deepweb Search Engine](http://multisearch.deepwebaccess.com/multisearch/)
