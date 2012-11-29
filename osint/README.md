@@ -1,3 +1,4 @@
+- [The Open Source Intelligence resource discovery toolkit, Reuser's new Repertorium](http://rr.reuser.biz/)
 - [NATO OSINT Reader FINAL 11OCT02.pdf](http://www.oss.net/dynamaster/file_archive/030201/254633082e785f8fe44f546bf5c9f1ed/NATO%20OSINT%20Reader%20FINAL%2011OCT02.pdf)
 - [Open Source Intelligence (OSINT) Link Directory, by Ben Benavides](http://humanterrainsystem.army.mil/Newsletter/20101220_osint_link_directory.pdf)
 - [Open Source Intelligence (OSINT)2oolKit On The Go, by Ben Benavides](http://www.phibetaiota.net/wp-content/uploads/2009/07/OSINT-2ool-Kit-OnThe-Go-Bag-O-Tradecraft.pdf)
@@ -8,7 +9,3 @@
 - [DTIC Government Information Guide](http://www.dtic.mil/dtic/stresources/topicLinks/governmentinfo.html)
 - [Librarians Guide to the Internet](http://www.ipl.org/)
 - [Links for OSINT (Open Source Intelligence) Internet Training Presented by Randolph Hock](http://www.onstrat.com/osint/)
-
-### Search
-
-[DTIC Deepweb Search Engine](http://multisearch.deepwebaccess.com/multisearch/)
